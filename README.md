@@ -1,6 +1,6 @@
 # AI Engineering Hackathon 25
 
-# High Level Architecture Design Flow
+# High Level Architecture Design Flow for Intent-Aware Product Search System
 
 
                       +---------------------+
@@ -15,7 +15,7 @@
                                |
                ┌───────────────┴───────────────┐
                |                               |
-        "Search Product"                Other Intents
+        Search Product                  Other Intents
                |                               |
                v                               v
 +----------------------------------+    +---------------------+
