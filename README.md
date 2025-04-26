@@ -20,21 +20,21 @@
                v                               v
 +----------------------------------+    +---------------------+
 | Semantic Search via Vector DB    |    | (Optional) Routing   |
-| - SentenceTransformer Embedding  |    | Different Handlers   |
-| - Vector Database (ChromaDB)      |    +---------------------+
+| SentenceTransformer Embedding    |    | Different Handlers   |
+| Vector Database (ChromaDB)       |    +---------------------+
 +----------------------------------+
                |
                v
 +----------------------------------+
 |   Top-k Matched Product Entries  |
-|   - title, brand, category        |
+|   title, brand, category         |
 +----------------------------------+
                |
                v
 +----------------------------------+
 |        FastAPI REST API          |
-|  - POST /search                  |
-|  - Returns JSON: intent + items  |
+|   POST /search                   |
+|   Returns JSON: intent + items   |
 +----------------------------------+
                |
                v
