@@ -19,7 +19,7 @@
                |                               |
                v                               v
 +----------------------------------+    +---------------------+
-| Semantic Search via Vector DB    |    | (Optional) Routing /|
+| Semantic Search via Vector DB    |    | (Optional) Routing  |
 | - SentenceTransformer Embedding  |    | Different Handlers  |
 | - Vector DB                      |    +---------------------+
 +----------------------------------+
@@ -33,7 +33,7 @@
                v
 +----------------------------------+
 |        FastAPI REST API          |
-|  - POST /search                  |
+|  - POST Search                  |
 |  - Returns JSON: intent + items  |
 +----------------------------------+
                |
