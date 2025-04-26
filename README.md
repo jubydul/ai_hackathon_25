@@ -4,13 +4,13 @@
 
 
                       +---------------------+
-                      |    User Query       |
+                      |    User Query        |
                       +---------------------+
                                |
                                v
                     +--------------------------+
-                    |  Intent Detection (ZSL)  |
-                    |  HuggingFace Transformers|
+                    |  Intent Detection (ZSL)   |
+                    |  HuggingFace Transformers |
                     +--------------------------+
                                |
                ┌───────────────┴───────────────┐
@@ -19,21 +19,21 @@
                |                               |
                v                               v
 +----------------------------------+    +---------------------+
-| Semantic Search via Vector DB    |    | (Optional) Routing  |
-| - SentenceTransformer Embedding  |    | Different Handlers  |
-| - Vector DB                      |    +---------------------+
+| Semantic Search via Vector DB    |    | (Optional) Routing   |
+| - SentenceTransformer Embedding  |    | Different Handlers   |
+| - Vector Database (ChromaDB)      |    +---------------------+
 +----------------------------------+
                |
                v
 +----------------------------------+
 |   Top-k Matched Product Entries  |
-|   - title, brand, category       |
+|   - title, brand, category        |
 +----------------------------------+
                |
                v
 +----------------------------------+
 |        FastAPI REST API          |
-|  - POST Search                  |
+|  - POST /search                  |
 |  - Returns JSON: intent + items  |
 +----------------------------------+
                |
@@ -43,6 +43,3 @@
         | (curl, browser,  |
         | Postman, etc.)   |
         +------------------+
-
-
-
